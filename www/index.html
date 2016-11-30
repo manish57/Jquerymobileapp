@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+	img.fullscreen
+	{
+		max-height: 100%;
+		max-width: 100%;
+	}
+</style>
+
+</head>
+<body>
+
+<div data-role="page" id="home"> 
+  <header data-role="header">
+    <h1>EASYLEARN</h1>
+  </header>
+
+
+
+<ul data-role="listview" data-filter="true">
+    
+      <li>
+        <a href="#fruits">
+        <img src="images\fruits.png">
+	<h1>Fruits</h1>        
+	<p>Learn different fruits name with pronounciation.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#vegetables">
+	<img src="images\vegetables.jpg" />
+	<h1>Vegetables</h1>
+        <p>Learn different Vegetables name with pronounciation.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#flowers">
+	<img src="images\flower.png" />
+	<h1>Flowers</h1>
+        <p>Learn different Flowers name with pronounciation.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#birds">
+	<img src="images\bird.jpg" />
+	<h1>Birds</h1>
+        <p>Learn different Birds name with pronounciation.</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#animals">	
+        <img src="images\animal.jpg" />
+	<h1>Animals</h1>        
+	<p>Learn different Animals name with pronounciation.</p>
+        </a>
+      </li>
+
+<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+			<li><a href="#home" data-role="button" data-icon="home">Home</a></li>
+			<li><a href="#info" data-role="button"data-icon="info">Info </a></li>
+			<li><a href="#aboutus" data-role="button"data-icon="user">About Us</a></li>
+		</ul>
+	</nav>
+</footer>
+</div><!---mainpage--->
+
+	<div data-role="page" id="info"> 
+ 	 <header data-role="header">
+    	   <h1>INFORMATION</h1>
+    	   <a href="#home" data-icon="home">HOME</a
+	 </header>
+	 <p>THIS APPLICATION IS DESIGNED FOR JUNIOR KIDS TO KNOW THE PROPER PRONOUNCIATION OF FRUITS, VEGETABLES, FLOWERS, BIRDS AND ANIMALS</p>
+	 </div>
+
+	<div data-role="page" id="aboutus"> 
+ 	 <header data-role="header">
+    	   <h1>ABOUT US</h1>
+    	   <a href="#home" data-icon="home">HOME</a
+	 </header>
+	 <p>THIS APPLICATION IS  A CLASS EXERCISE ON JQUERY MOBILE. IT IS DESIGNED BY MANISH CHAUDHARI, PACE UNIVERSITY</p>
+	 </div>
+
+
+
+	<div data-role="page" id="fruits"> 
+ 	 <header data-role="header">
+    	   <h1>FRUITS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\apple.png" class="fullscreen" />
+	<h3>APPLE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/apple.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#banana" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="banana"> 
+	 <header data-role="header">
+	    <h1>FRUITS</h1>
+	    <a href="#home" data-icon="home">HOME</a>
+	  </header>
+	<center>
+	<img src="images\banana.png" class="fullscreen" />
+	<h3>BANANA</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/banana.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#fruits" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#orange" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>	
+	</footer>
+	</div><!---page--->
+
+	<div data-role="page" id="orange"> 
+	 <header data-role="header">
+	    <h1>FRUITS</h1>
+	    <a href="#home" data-icon="home">HOME</a>
+	  </header>
+	<center>
+	<img src="images\orange.png" class="fullscreen" />
+	<h3>ORANGE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/orange.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#banana" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#pine" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>
+	</div><!---page--->
+
+	<div data-role="page" id="pine"> 
+	 <header data-role="header">
+	    <h1>FRUITS</h1>
+	    <a href="#home" data-icon="home">HOME</a>
+	  </header>
+	<center>
+	<img src="images\pineapple.png" class="fullscreen" />
+	<h3>PINEAPPLE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/pineapple.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#orange" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#strawberry" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>
+	</div><!---page--->
+
+	<div data-role="page" id="strawberry"> 
+	 <header data-role="header">
+	    <h1>FRUITS</h1>
+	    <a href="#home" data-icon="home">HOME</a>
+	  </header>
+	<center>
+	<img src="images\strawberry.png" class="fullscreen" />
+	<h3>STRAWBERRY</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/strawberry.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#pine" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#watermelon" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>
+	</div><!---page--->
+
+	<div data-role="page" id="watermelon"> 
+	 <header data-role="header">
+	    <h1>FRUITS</h1>
+	    <a href="#home" data-icon="home">HOME</a>
+	  </header>
+	<center>
+	<img src="images\watermelon.jpg" class="fullscreen" />
+	<h3>WATERMELON</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/watermelon.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#strawberry" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		</ul>
+	</nav>
+	</footer>
+    	</div><!---allfruitspage--->
+
+
+
+
+
+
+	<div data-role="page" id="vegetables"> 
+ 	 <header data-role="header">
+    	   <h1>VEGETABLES</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\potato.png" class="fullscreen" />
+	<h3>POTATO</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/potato.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#cabbage" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="cabbage"> 
+ 	 <header data-role="header">
+    	   <h1>VEGETABLES</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\cabbage.png" class="fullscreen" />
+	<h3>CABBAGE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/cabbage.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#vegetables" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#cauliflower" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="cauliflower"> 
+ 	 <header data-role="header">
+    	   <h1>VEGETABLES</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\cauliflower.jpg" class="fullscreen" />
+	<h3>CAULIFLOWER</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/cauliflower.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#cabbage" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#eggplant" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="eggplant"> 
+ 	 <header data-role="header">
+    	   <h1>VEGETABLES</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\eggplant.png" class="fullscreen" />
+	<h3>EGGPLANT</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/eggplant.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#cauliflower" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#okra" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="okra"> 
+ 	 <header data-role="header">
+    	   <h1>VEGETABLES</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\okra.png" class="fullscreen" />
+	<h3>OKRA</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/okra.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#eggplant" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---allvegetablespage--->
+
+
+
+
+	<div data-role="page" id="flowers"> 
+ 	 <header data-role="header">
+    	   <h1>FLOWERS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\rose.png" class="fullscreen" />
+	<h3>ROSE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/rose.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#lotus" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+
+	<div data-role="page" id="lotus"> 
+ 	 <header data-role="header">
+    	   <h1>FLOWERS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\lotus.jpg" class="fullscreen" />
+	<h3>LOTUS</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/lotus.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#flowers" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#sunflower" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="sunflower"> 
+ 	 <header data-role="header">
+    	   <h1>FLOWERS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\sunflower.png" class="fullscreen" />
+	<h3>SUNFLOWER</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/sunflower.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#lotus" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#lily" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="lily"> 
+ 	 <header data-role="header">
+    	   <h1>FLOWERS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\lily.png" class="fullscreen" />
+	<h3>LILY</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/lily.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#sunflower" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#orchids" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="orchids"> 
+ 	 <header data-role="header">
+    	   <h1>FLOWERS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\orchids.png" class="fullscreen" />
+	<h3>ORCHID</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/orchid.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#lily" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---allflowerspage--->
+
+
+
+	<div data-role="page" id="birds"> 
+ 	 <header data-role="header">
+    	   <h1>BIRDS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\eagle.jpg" class="fullscreen" />
+	<h3>EAGLE</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/eagle.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#owl" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="owl"> 
+ 	 <header data-role="header">
+    	   <h1>BIRDS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\owl.jpg" class="fullscreen" />
+	<h3>OWL</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/owl.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#birds" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#kiwi" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="kiwi"> 
+ 	 <header data-role="header">
+    	   <h1>BIRDS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\kiwi.jpg" class="fullscreen" />
+	<h3>KIWI</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/kiwi.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#owl" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#peacock" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="peacock"> 
+ 	 <header data-role="header">
+    	   <h1>BIRDS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\peacock.jpg" class="fullscreen" />
+	<h3>PEACOCK</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/peacock.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#kiwi" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#parrot" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="parrot"> 
+ 	 <header data-role="header">
+    	   <h1>BIRDS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\parrot.jpg" class="fullscreen" />
+	<h3>PARROT</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/parrot.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#peacock" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---allbirdspage--->
+
+
+
+
+
+	<div data-role="page" id="animals"> 
+ 	 <header data-role="header">
+    	   <h1>ANIMALS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\lion.jpg" class="fullscreen" />
+	<h3>LION</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/lion.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#tiger" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="tiger"> 
+ 	 <header data-role="header">
+    	   <h1>ANIMALS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\tiger.jpg" class="fullscreen" />
+	<h3>TIGER</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/tiger.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#animals" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#monkey" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="monkey"> 
+ 	 <header data-role="header">
+    	   <h1>ANIMALS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\monkey.jpg" class="fullscreen" />
+	<h3>MONKEY</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/monkey.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#tiger" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#bear" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="bear"> 
+ 	 <header data-role="header">
+    	   <h1>ANIMALS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\bear.png" class="fullscreen" />
+	<h3>BEAR</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/bear.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#monkey" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		<li><a href="#kangaroo" data-role="button" data-icon="arrow-r">NEXT</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---page--->
+
+	<div data-role="page" id="kangaroo"> 
+ 	 <header data-role="header">
+    	   <h1>ANIMALS</h1>
+    	   <a href="#home" data-icon="home">HOME</a>
+	 </header>
+	<center>
+	<img src="images\kangaroo.jpg" class="fullscreen" />
+	<h3>KANGAROO</h3>
+	<audio controls>
+  	<source src="https://ssl.gstatic.com/dictionary/static/sounds/de/0/kangaroo.mp3">
+        </audio>
+	</center>
+	<footer data-role="footer" data-position="fixed" data-fullscreen="true">
+	<nav data-role="navbar">
+		<ul>
+		<li><a href="#bear" data-role="button" data-icon="arrow-l">PREVIOUS</a></li>
+		</ul>
+	</nav>
+	</footer>	
+	</div><!---allanimalspage--->
+
+
+</body>
+</html>
